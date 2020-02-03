@@ -1,0 +1,33 @@
+class Solution{
+    public static void israinbow(int [] arr){
+     
+        
+        int s=0,l=arr.length-1;
+        
+        boolean flag=true;
+        while(s<=l){
+        if(arr[s]!=arr[l]){
+            
+            flag=false;
+           
+        }
+            
+            s++;
+            l--; 
+            
+        }
+        
+        if(arr[(arr.length)/2]!=7){
+            flag=false;
+        }
+        
+        
+        if(flag){
+            System.out.println("yes");
+        }else{
+            System.out.println("no");
+        }
+        
+        
+    }
+}
